@@ -1,0 +1,30 @@
+﻿<Window x:Class="interfacesCara.editEquipo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:interfacesCara"
+        mc:Ignorable="d"
+        Title="editEquipo" Height="450" Width="800"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+
+
+  <Grid>
+    <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="400" Height="29"/>
+    <Label x:Name="person1" Content="Label" HorizontalAlignment="Left" Margin="116,131,0,0" VerticalAlignment="Top"/>
+    <Label x:Name="persona2"/>
+    <Label x:Name="persona3"/>
+    <Label x:Name="persona4"/>
+    <Label x:Name="persona5"/>
+
+    <Label x:Name="persona6"/>
+  </Grid>
+</Window>
