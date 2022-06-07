@@ -6,7 +6,48 @@
         xmlns:local="clr-namespace:interfacesCara"
         mc:Ignorable="d"
         Title="Equipos" Height="450" Width="800">
-    <Grid>
-        
+  <Window.Background>
+    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+      <GradientStop Color="Black"/>
+      <GradientStop Color="#FF1B099A" Offset="1"/>
+    </LinearGradientBrush>
+  </Window.Background>
+  <Grid>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="290"/>
+      <ColumnDefinition Width="254"/>
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <Grid  Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="64,0,0,180" Grid.Column="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="166*"/>
+        <ColumnDefinition Width="141*"/>
+      </Grid.ColumnDefinitions>
+      <StackPanel Grid.ColumnSpan="2"  >
+        <Label FontSize="23" Content="LISTA DE EQUIPOS" Width="204" Background="Black" />
+      </StackPanel>
     </Grid>
+    <Grid Margin="0,40,5,0" Grid.ColumnSpan="2" Visibility="Visible" Background="Aquamarine">
+      <StackPanel  Grid.Row="0" Grid.Column="0"  Margin="0 10 0 0">
+        
+      </StackPanel>
+    </Grid>
+    <Grid Grid.Column="2" Margin="0,40,0,0">
+      <StackPanel Margin="10,0,0,0" >
+        <StackPanel.Background>
+          <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF26289C" Offset="1"/>
+          </LinearGradientBrush>
+        </StackPanel.Background>
+        <Button x:Name="btnEdit" Content="editar grupo" Margin="10"/>
+        <Button x:Name="btnDelete" Content="Eliminar grupo" Margin="10" />
+        <Button x:Name="btnBack" Content="Volver al Menu" Margin="0 55 0 0" Click="btnBack_Click" Width="208" />
+      </StackPanel>
+    </Grid>
+  </Grid>
 </Window>

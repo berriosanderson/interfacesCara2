@@ -22,7 +22,7 @@
     <Label x:Name="person1" Content="Label" HorizontalAlignment="Left" Margin="116,131,0,0" VerticalAlignment="Top"/>
     <Label x:Name="persona2"/>
     <Label x:Name="persona3"/>
-    <Label x:Name="persona4"/>
+    <Label x:Name="persona4"/>  
     <Label x:Name="persona5"/>
 
     <Label x:Name="persona6"/>
